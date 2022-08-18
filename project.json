@@ -1,0 +1,41 @@
+{
+  "title": "DifusionAntropologica",
+  "date": "18/08/22",
+  "description": {},
+  "license": {
+    "es": "Esta obra está bajo una licencia de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "es"
+  ],
+  "mainFile": "difusionantropologica.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 5,
+  "mediaFiles": 17,
+  "totalSize": 448876,
+  "files": [
+    "citlali_quechal-resized1.jpg",
+    "citlali_quechal.mp3",
+    "difusionantropologica.jclic",
+    "difusionantropologica.jclic.js",
+    "favicon.ico",
+    "gabriel_bourdin-resized.jpg",
+    "gabriel_bourdin.mp3",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "logos.png",
+    "maria_castaneda-resized1.jpg",
+    "maria_castaneda.mp3",
+    "maria_galicia-resized1.jpg",
+    "maria_galicia.mp3",
+    "personas_de_africa_citlali_quechal-resized.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "teresa_valdina-resized1.jpg",
+    "teresa_valdivia.mp3"
+  ]
+}

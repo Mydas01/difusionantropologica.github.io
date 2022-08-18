@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="difusionantropologica" version="0.1.3">
+ <settings>
+  <title>DifusionAntropologica</title>
+  <revision description="created" date="8/18/22" />
+  <descriptors />
+  <skin file="@orange.xml" />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="JuegoDeAsociación" />
+  <item name="Crucigrama" />
+  <item name="Rompecabezas" />
+  <item name="Memorama" />
+  <item name="SopaDeLetras" />
+ </sequence>
+ <activities>
+  <activity class="@textGrid.CrossWord" name="Crucigrama" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x9999FF" />
+     </style>
+     <p>COLOCA LOS APELLIDOS DE LOS INVESTIGADORES: QUECHAL, GALICIA, CASTAÑEDA, VALDIVIA Y BOURDIN</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FF99" />
+     </style>
+     <p>ENHORABUENA, AVANCEMOS A LA SIGUIENTE ACTIVIDAD.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Logos.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true" />
+   </settings>
+   <textGrid rows="9" columns="12" cellWidth="52.0" cellHeight="47.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>****Q****</row>
+     <row>****U****</row>
+     <row>*V**E****</row>
+     <row>GALICIA**</row>
+     <row>*L**H****</row>
+     <row>*D**A**B*</row>
+     <row>*I**L**O*</row>
+     <row>*V*****U*</row>
+     <row>*I*****R*</row>
+     <row>CASTAÑEDA</row>
+     <row>*******I*</row>
+     <row>*******N*</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="121.0" cellHeight="261.0" border="true" id="acrossClues">
+    <style>
+     <color background="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="11" item="1" />
+    <cell id="11" item="0" />
+    <cell id="10" item="1" />
+    <cell id="10" item="0" />
+    <cell id="9" item="0" image="María Castañeda-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Maria Castañeda.mp3" />
+    </cell>
+    <cell id="9" item="0" />
+    <cell id="8" item="0" />
+    <cell id="8" item="1" />
+    <cell id="8" item="2" />
+    <cell id="7" item="2" />
+    <cell id="7" item="1" />
+    <cell id="7" item="0" />
+    <cell id="6" item="1" />
+    <cell id="6" item="2" />
+    <cell id="6" item="3" />
+    <cell id="6" item="0" />
+    <cell id="5" item="1" />
+    <cell id="5" item="2" />
+    <cell id="5" item="3" />
+    <cell id="5" item="0" />
+    <cell id="4" item="1" />
+    <cell id="4" item="2" />
+    <cell id="4" item="0" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0" />
+    <cell id="2" item="2" />
+    <cell id="1" item="0" />
+    <cell id="1" item="0" />
+    <cell id="3" item="0" image="Maria Galicia-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Maria Galicia.mp3" />
+    </cell>
+    <cell id="3" item="0" />
+    <cell id="0" item="1" />
+    <cell id="0" item="0" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="121.0" cellHeight="261.0" border="true" id="downClues">
+    <style>
+     <color background="0x99FFFF" />
+    </style>
+    <cell id="8" item="1" />
+    <cell id="9" item="0" />
+    <cell id="8" item="0" />
+    <cell id="8" item="0" />
+    <cell id="7" item="0" image="Gabriel Bourdin-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Gabriel Bourdin.mp3" />
+    </cell>
+    <cell id="7" item="0" />
+    <cell id="6" item="0" />
+    <cell id="6" item="1" />
+    <cell id="6" item="2" />
+    <cell id="4" item="0" image="Citlali Quechal-resized1.jpg">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FFFF" inactive="0x99FFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Citlali Quechal.mp3" />
+    </cell>
+    <cell id="4" item="1" />
+    <cell id="4" item="2" />
+    <cell id="3" item="2" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0" />
+    <cell id="3" item="2" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0" image="Teresa Valdina-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Teresa Valdivia.mp3" />
+    </cell>
+    <cell id="2" item="0" />
+    <cell id="2" item="1" />
+    <cell id="2" item="2" />
+    <cell id="5" item="0" />
+    <cell id="5" item="1" />
+    <cell id="5" item="2" />
+    <cell id="0" item="0" />
+    <cell id="0" item="1" />
+    <cell id="0" item="2" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="JuegoDeAsociación" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x9999FF" />
+     </style>
+     <p>ASOCIA LA IMAGEN CON EL NOMBRE DEL INVESTIGADOR. SOLO TIENES 5 INTENTOS.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FF99" />
+     </style>
+     <p>BIEN HECHO, CONTINUEMOS CON OTRA ACTIVIDAD.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0xFF9999" />
+     </style>
+     <p>SE ACABARON TUS INTENTOS, VUELVE A INTENTARLO.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="5" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Logos.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="250.0" cellHeight="601.0" border="false" id="primary">
+    <style>
+     <color background="0x99FFFF" inactive="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="Citlali Quechal-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Citlali Quechal.mp3" />
+    </cell>
+    <cell image="Gabriel Bourdin-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Gabriel Bourdin.mp3" />
+    </cell>
+    <cell image="Maria Galicia-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Maria Galicia.mp3" />
+    </cell>
+    <cell image="María Castañeda-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Maria Castañeda.mp3" />
+    </cell>
+    <cell image="Teresa Valdina-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Teresa Valdivia.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="211.0" cellHeight="121.0" border="true" id="secondary">
+    <style>
+     <color background="0x99FFFF" inactive="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FFFF" inactive="0x99FFFF" />
+     </style>
+     <p>Citlali Quechal</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FFFF" inactive="0x99FFFF" />
+     </style>
+     <p>Gabriel Bourdin</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FFFF" inactive="0x99FFFF" />
+     </style>
+     <p>Maria Galicia</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FFFF" inactive="0x99FFFF" />
+     </style>
+     <p>María Castañeda</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FFFF" inactive="0x99FFFF" />
+     </style>
+     <p>Teresa Valdivia</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="Memorama" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x9999FF" />
+     </style>
+     <p>ENCUENTRA LOS PARES DE LOS INVESTIGADORES.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FF99" />
+     </style>
+     <p>EXCELENTE, VAMOS POR OTRA ACTIVIDAD MÁS.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Logos.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="202.0" cellHeight="571.0" border="true" id="primary">
+    <style>
+     <color background="0x99FFFF" inactive="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="Citlali Quechal-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Citlali Quechal.mp3" />
+    </cell>
+    <cell image="Gabriel Bourdin-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Gabriel Bourdin.mp3" />
+    </cell>
+    <cell image="Maria Galicia-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Maria Galicia.mp3" />
+    </cell>
+    <cell image="María Castañeda-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Maria Castañeda.mp3" />
+    </cell>
+    <cell image="Teresa Valdina-resized1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="Teresa Valdivia.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Rompecabezas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x9999FF" />
+     </style>
+     <p>ORDENA LAS PIEZAS PARA REVELAR LA IMAGEN</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FF99" />
+     </style>
+     <p>BUEN TRABAJO, CONTINUA A LA SIGUIENTE ACTIVIDAD.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Logos.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="Personas de Africa_Citlali Quechal-resized.jpg">
+    <style>
+     <color background="0x99FFFF" inactive="0x99FFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="SopaDeLetras" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Comic Sans MS" size="24" />
+      <color background="0x9999FF" />
+     </style>
+     <p>ENCUENTRA LOS NOMBRES DE LOS INVESTIGADORES: QUECHAL, GALICIA, CASTAÑEDA, VALDIVIA Y BOURDIN. TIENES 30 SEGUNDOS.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0x99FF99" />
+     </style>
+     <p>FELICIDADES. CONTINUA A LA SIGUIENTE ACTIVIDAD.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Comic Sans MS" size="28" />
+      <color background="0xFF9999" />
+     </style>
+     <p>SE AGOTÓ EL TIEMPO, VUELVE A INTENTARLO.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="30" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="Logos.png" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FFFF" border="true" />
+   </settings>
+   <textGrid rows="13" columns="11" cellWidth="48.0" cellHeight="39.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>**Q**********</row>
+     <row>**U**********</row>
+     <row>**E*******V**</row>
+     <row>**CASTAÑEDA**</row>
+     <row>**H*******L**</row>
+     <row>*GALICIA**D**</row>
+     <row>**L*******I**</row>
+     <row>**********V**</row>
+     <row>*****BOURDIN*</row>
+     <row>**********A**</row>
+     <row>*************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">QUECHAL</clue>
+    <clue id="1">GALICIA</clue>
+    <clue id="2">CASTAÑEDA</clue>
+    <clue id="3">VALDIVIA</clue>
+    <clue id="4">BOURDIN</clue>
+   </clues>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Citlali Quechal-resized1.jpg" file="citlali_quechal-resized1.jpg" />
+  <media name="Gabriel Bourdin-resized.jpg" file="gabriel_bourdin-resized.jpg" />
+  <media name="Maria Galicia-resized1.jpg" file="maria_galicia-resized1.jpg" />
+  <media name="María Castañeda-resized1.jpg" file="maria_castaneda-resized1.jpg" />
+  <media name="Personas de Africa_Citlali Quechal-resized.jpg" file="personas_de_africa_citlali_quechal-resized.jpg" />
+  <media name="Teresa Valdina-resized1.jpg" file="teresa_valdina-resized1.jpg" />
+  <media name="Citlali Quechal.mp3" file="citlali_quechal.mp3" />
+  <media name="Gabriel Bourdin.mp3" file="gabriel_bourdin.mp3" />
+  <media name="Maria Castañeda.mp3" file="maria_castaneda.mp3" />
+  <media name="Maria Galicia.mp3" file="maria_galicia.mp3" />
+  <media name="Teresa Valdivia.mp3" file="teresa_valdivia.mp3" />
+  <media name="Logos.png" file="logos.png" />
+ </mediaBag>
+</JClicProject>
+
